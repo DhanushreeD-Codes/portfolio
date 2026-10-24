@@ -1,165 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dhanushree D | Senior Software Engineer</title>
-    <meta name="description" content="Portfolio of Dhanushree D, Senior Software Engineer specializing in C#, ASP.NET Core, SQL Server, and clean software architecture." />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Segoe UI", Arial, sans-serif;
-        background: #0f172a;
-        color: #e2e8f0;
-        line-height: 1.6;
-      }
-      .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 4rem 1.5rem;
-      }
-      header {
-        text-align: center;
-        margin-bottom: 3rem;
-      }
-      h1 {
-        font-size: 2.8rem;
-        margin-bottom: 0.5rem;
-      }
-      .role {
-        color: #38bdf8;
-        font-weight: 600;
-        font-size: 1.2rem;
-      }
-      .intro {
-        max-width: 700px;
-        margin: 1.5rem auto 2rem;
-        color: #cbd5e1;
-      }
-      .buttons {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .btn {
-        display: inline-block;
-        padding: 0.8rem 1.6rem;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: 0.2s ease;
-      }
-      .btn-primary {
-        background: #38bdf8;
-        color: #0f172a;
-      }
-      .btn-primary:hover {
-        background: #0ea5e9;
-      }
-      .btn-secondary {
-        border: 1px solid #38bdf8;
-        color: #38bdf8;
-      }
-      .btn-secondary:hover {
-        background: rgba (56, 189, 248, 0.1);
-      }
-      section {
-        margin-bottom: 3rem;
-      }
-      h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        color: #f8fafc;
-      }
-      .skills {
-        display: grid;
-        grid-template-columns: repeat(autofill, minmax(220px, 1fr));
-        gap: 1rem;
-      }
-      .skill-card {
-        background: #1e293b;
-        padding: 1.25rem;
-        border-radius: 10px;
-        border: 1px solid #334155;
-      }
-      .skill-card h3 {
-        color: #38bdf8;
-        margin-bottom: 0.5rem;
-        font-size: 1.05rem;
-      }
-      footer {
-        text-align: center;
-        padding: 2rem 0;
-        color: #94a3b8;
-        border-top: 1px solid #334155;
-      }
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 2rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Dhanushree D</h1>
-        <p class="role">Senior Software Engineer</p>
-        <p class="intro">          
-          I design and build secure, maintainable, production-ready backend systems using C#, ASP.NET MVC, ASP.NET Core, SQL Server, and clean software architecture.
-        </p>
-          <div class="buttons">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="https://github.com/DhanushreeD-Codes" targer="_blank" rel="noopener">GitHub</a>
-        </div>
-      </header>
-    <section id="about">
-      <h2>About Me</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanushree D | Senior Software Engineer</title>
+  <meta name="description" content="Portfolio of Dhanushree D, Senior .NET Engineer specializing in C#, ASP.NET Core, SQL Server, and clean software architecture." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Dhanushree<span>.dev</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Dhanushree D</h1>
+      <p class="role">Senior Software Engineer</p>
       <p>
-        I am a Senior Software Engineer with experience building enterprise applications using C#, ASP.NET MVC, ASP.NET Core, SQL Server, and modern software architecture.
-        My work focuses on backend development, clean architecture, database design, security and maintainable code.
+        I design and build secure, maintainable, production-ready backend systems using C#, ASP.NET Core, SQL Server, and clean software architecture.
       </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="projects.html">View Projects</a>
+        <a class="btn btn-secondary" href="https://github.com/DhanushreeD-codes" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </section>
-      <section id="skills">
-        <h2>Technical skills</h2>
-        <div class="skills">
-          <div class="skill-card">
-            <h3>Languages</h3>
-            <p>C#, SQL, JavaScript</p>
-          </div>
-          <div class="skill-card">
-            <h3>Backend</h3>
-            <p>ASP.NET MVC, ASP.NET Core, Web API, Minimal APIs, EF Core</p>
-          </div>
-          <div class="skill-card">
-            <h3>Databases</h3>
-            <p>SQL server, PostgreSQL</p>
-          </div>
-          <div class="skill-card">
-            <h3>Architecture</h3>
-            <p>Clean Architecture, REST, Domain-Driven Design, CQRS</p>
-          </div>
-          <div class="skill-card">
-            <h3>Testing</h3>
-            <p>xUnit, integration testing, mocking</p>
-          </div>
-          <div class="skill-card">
-            <h3>Tools</h3>
-            <p>Git, GitHub, Visual Studio, VS Code</p>
-          </div>
+
+    <section>
+      <h2>What I Do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Backend Development</h3>
+          <p>Build scalable REST APIs and business services using ASP.NET MVC, ASP.NET Core, C#, and Entity Framework Core.</p>
         </div>
-      </section>
-    </div>
-    <footer>
-      <p>©️ <span id="year"></span> Dhanushree D. Built with GitHub Pages.</p>
-    </footer>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+        <div class="card">
+          <h3>Architecture & Design</h3>
+          <p>Design maintainable systems using Clean Architecture, domain modeling, and clear separation of concerns.</p>
+        </div>
+        <div class="card">
+          <h3>Database Engineering</h3>
+          <p>Design relational data models, write efficient SQL, and work with SQL Server and PostgreSQL.</p>
+        </div>
+        <div class="card">
+          <h3>Quality Engineering</h3>
+          <p>Improve reliability through unit testing, integration testing, validation, and meaningful code reviews.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Project</h2>
+      <div class="card project-card">
+        <span class="project-status">In Development</span>
+        <h3>Job Application Tracker & Resume Intelligence Platform</h3>
+        <p>
+          A production-style .NET backend platform for managing job applications, interviews, resumes, notes, and follow-ups.
+        </p>
+        <div class="tags">
+          <span class="tag">C#</span>
+          <span class="tag">ASP.NET Core</span>
+          <span class="tag">EF Core</span>
+          <span class="tag">SQL Server</span>
+          <span class="tag">Clean Architecture</span>
+        </div>
+        <p>
+          <a href="projects.html">View project details →</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Dhanushree D. Built with GitHub Pages.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
