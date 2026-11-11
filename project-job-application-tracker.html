@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application Tracker | Dhanushree D</title>
+  <meta name="description" content="Case study of the Job Application Tracker & Resume Intelligence Platform, a senior .NET backend project by Dhanushree D." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Dhanushree<span>.dev</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <span class="project-status">In Development</span>
+      <h1>Job Application Tracker & Resume Intelligence Platform</h1>
+      <p>
+        A production-style .NET backend platform that helps job seekers manage applications, interviews, resumes, contacts, notes, and follow-ups in one place.
+      </p>
+
+      <div class="tags">
+        <span class="tag">C#</span>
+        <span class="tag">.NET 10</span>
+        <span class="tag">ASP.NET Core</span>
+        <span class="tag">EF Core</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">Clean Architecture</span>
+        <span class="tag">xUnit</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Business Problem</h2>
+      <p>
+        Job seekers often manage their applications across spreadsheets, email folders, browser bookmarks, and notes. This makes it difficult to track application status, prepare for interviews, remember follow-ups, and understand which applications are producing results.
+      </p>
+      <p>
+        This platform centralizes the job-search workflow and provides a clear record of every application, interview, contact, and follow-up.
+      </p>
+    </section>
+
+    <section>
+      <h2>My Role</h2>
+      <p>
+        I am designing and building this platform end to end as a senior .NET backend project. My responsibilities include:
+      </p>
+      <div class="card">
+        <ul>
+          <li>Defining the business domain and core workflows</li>
+          <li>Designing the database schema and entity relationships</li>
+          <li>Creating the Clean Architecture solution structure</li>
+          <li>Building REST APIs using ASP.NET Core</li>
+          <li>Implementing authentication and authorization</li>
+          <li>Writing unit and integration tests</li>
+          <li>Documenting architecture and engineering decisions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Core Features</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>User Management</h3>
+          <p>User registration, login, profile management, and secure access to personal job-search data.</p>
+        </div>
+        <div class="card">
+          <h3>Application Tracking</h3>
+          <p>Track job applications through statuses such as Saved, Applied, Interview, Offer, and Rejected.</p>
+        </div>
+        <div class="card">
+          <h3>Resume Management</h3>
+          <p>Upload and manage resume versions, associate resumes with applications, and maintain application history.</p>
+        </div>
+        <div class="card">
+          <h3>Interview Tracking</h3>
+          <p>Record interview rounds, schedules, feedback, interviewers, and outcomes.</p>
+        </div>
+        <div class="card">
+          <h3>Notes & Follow-Ups</h3>
+          <p>Add notes to applications and schedule follow-up reminders so important actions are not missed.</p>
+        </div>
+        <div class="card">
+          <h3>Search & Analytics</h3>
+          <p>Search and filter applications, then view insights such as response rate and interview conversion rate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Planned Architecture</h2>
+      <p>
+        The solution will follow Clean Architecture to keep business logic independent from frameworks, databases, and external services.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Domain Layer</h3>
+          <p>Contains core business entities, value objects, enums, and domain rules.</p>
+        </div>
+        <div class="card">
+          <h3>Application Layer</h3>
+          <p>Contains application services, use cases, interfaces, validation logic, and business workflows.</p>
+        </div>
+        <div class="card">
+          <h3>Infrastructure Layer</h3>
+          <p>Contains EF Core, database context, repositories where appropriate, file storage, and external service implementations.</p>
+        </div>
+        <div class="card">
+          <h3>API Layer</h3>
+          <p>Contains ASP.NET Core controllers or minimal API endpoints, request/response models, authentication, and API documentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Engineering Decisions</h2>
+      <div class="card">
+        <h3>Why Clean Architecture?</h3>
+        <p>
+          Clean Architecture helps keep the core job-application domain independent from ASP.NET Core, EF Core, and SQL Server. This improves testability and makes future changes easier to manage.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Why EF Core?</h3>
+        <p>
+          EF Core provides productive data access, strong LINQ support, migrations, and change tracking. It is suitable for this application because most operations are standard relational data operations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Why a Status Workflow?</h3>
+        <p>
+          Application status is a business workflow, not just a string field. Defining valid transitions helps prevent inconsistent data and makes the domain easier to understand.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Planned API Areas</h2>
+      <div class="card">
+        <ul>
+          <li>Authentication and user profile APIs</li>
+          <li>Job application CRUD and status-transition APIs</li>
+          <li>Resume upload and management APIs</li>
+          <li>Interview tracking APIs</li>
+          <li>Notes and follow-up APIs</li>
+          <li>Search, filtering, pagination, and analytics APIs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Testing Strategy</h2>
+      <p>
+        The project will include automated tests to verify both business rules and API behavior.
+      </p>
+      <div class="card">
+        <ul>
+          <li>Unit tests for domain rules and application services</li>
+          <li>Integration tests for API endpoints and database operations</li>
+          <li>Validation tests for invalid requests and business-rule violations</li>
+          <li>Authentication and authorization tests</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Status</h2>
+      <div class="card">
+        <p>
+          The project is currently in the design phase. The next steps are to finalize the domain model, define the database schema, create the solution structure, and implement the first API endpoints.
+        </p>
+        <p>
+          <strong>GitHub repository:</strong> Coming soon
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Dhanushree D. Built with GitHub Pages.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
